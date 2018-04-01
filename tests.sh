@@ -328,7 +328,7 @@ build_jruby() {
   internal_build_cpp  # For conformance tests.
   # TODO(xiaofeng): Upgrade to jruby-9.x. There are some broken jests to be
   # fixed.
-  cd ruby && bash travis-test.sh jruby-1.7 && cd ..
+  cd ruby && bash travis-test.sh jruby && cd ..
 }
 build_ruby_all() {
   build_ruby21
