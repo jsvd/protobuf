@@ -79,6 +79,10 @@ matrix:
       env: CONFIG=java_compatibility
       sudo: required
       dist: trusty
+    - os: linux
+      env: CONFIG=jruby
+      sudo: required
+      dist: trusty
     # The Python compatibility test currently only runs on Linux because it will
     # fetch pre-built Linux protoc binaries in the test.
     - os: linux
