@@ -8,7 +8,7 @@ test_version() {
   if [ "$version" == "jruby" ] ; then
     # No conformance tests yet -- JRuby is too broken to run them.
     bash --login -c \
-      "rvm install $version && rvm use $version && rvm get head && \
+      "rvm install jruby-1.7 && rvm use jruby-1.7 && rvm get head && \
        which ruby && \
        git clean -f && \
        gem install bundler && bundle && \
