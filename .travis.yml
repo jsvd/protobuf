@@ -2,7 +2,11 @@
 # matter, it just controls the default install/script/etc. steps on
 # travis.
 language: cpp
+
+jdk: oraclejdk8
+
 script: ./tests.sh $CONFIG
+
 
 # The test matrix is manually built to cover a mix of linux and macOS
 # hosted setups; this lets some extra settings be done specific to each
